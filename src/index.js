@@ -6,9 +6,15 @@ import "./App.css";
 
 function App() {
   return (
-    <div className="App">
+    <><div className="App">
       <Weather />
     </div>
+      <div>
+        <small>
+          <a href="https://github.com/alineborak/weather-react" target="blank" rel="noreferrer" >Open-source code </a> by Aline Bora-Kloppert
+        </small>
+      </div>
+    </>
   );
 }
 
