@@ -1,5 +1,8 @@
-#additional-info {
-    color: rgb(213, 143, 138);
+  #additional-info {
+  color: #2c567f;
+  font-weight: 600;
+  list-style: none;
+  margin: 0;
   }
   
   #background-img {
@@ -23,10 +26,16 @@
     /* color: rgb(184, 50, 115); */
   }
   
-  #date,
+  #date {
+    color: rgb(213, 143, 138);
+    font-size: 14px;
+    font-weight: 500;
+  }
+
   #current-condition {
     color: rgb(12, 58, 93);
     font-family: "Russo One", sans-serif;
+    font-size: 14px;
   }
   
   #city-input {
@@ -40,48 +49,30 @@
   
   #temperature-degree {
     color: rgb(148, 77, 111);
+    position: relative;
+    left: 8px;
   }
-  
-  .weather-forecast-date {
-    color: rgb(148, 77, 111);
-  }
-  
-  .weather-forecast {
-    font-family: "Fredoka", sans-serif;
-    margin-top: 35px;
-    text-align: center;
-  }
-  
-  .weather-temp-min {
-    color: #7f6a8a;
-  }
-  
+
   .overview {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
   }
-  
-  .weather-icon .active {
-    color: rgb(130, 112, 141);
-    outline-color: #fff;
+
+  .units {
+    color: rgb(148, 77, 111);
+    font-weight: 600;
+    line-height: 1;
+    position: relative;
+    left: 8px;
+    top: -4px;
   }
-  
-  .weather-icon .active:hover {
-    color: rgb(201, 146, 235);
-    text-decoration: none;
-  }
-  
-  .weather-app-cntr {
-    max-width: 650px;
-    margin: 50px auto;
-    padding: 0;
-  }
-  
+
   .weather-app {
+    border-radius: 10px;
     border-style: inset;
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(15px);
-    padding: 35px;
-    border-radius: 15px;
+    padding: 18px;
+    margin: 30px auto;
   }
   
   .weather-icon img {
@@ -94,15 +85,6 @@
     width: 70px;
   }
   
-  .weather-icon .units {
-    color: rgb(148, 77, 111);
-    font-family: "Russo One", sans-serif;
-    font-size: 12px;
-    font-weight: 400;
-    position: relative;
-    top: -6px;
-  }
-  
   .weather-icon strong {
     color: #fff;
     font-size: 40px;
@@ -111,4 +93,19 @@
     position: relative;
     top: 12px;
   }
+
+
+    /* .weather-forecast {
+    font-family: "Fredoka", sans-serif;
+    margin-top: 35px;
+    text-align: center;
+  } */
   
+  /* .weather-temp-min {
+    color: #7f6a8a;
+  } */
+  
+  /* .weather-icon .active:hover {
+    color: rgb(201, 146, 235);
+    text-decoration: none;
+  } */
