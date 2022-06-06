@@ -33,7 +33,7 @@
   }
 
   #current-condition {
-    color: rgb(12, 58, 93);
+    color: #70757A;
     font-family: "Russo One", sans-serif;
     font-size: 14px;
   }
@@ -50,7 +50,7 @@
   #temperature-degree {
     color: rgb(148, 77, 111);
     position: relative;
-    left: 8px;
+    left: 10px;
   }
 
   .overview {
@@ -62,7 +62,7 @@
     font-weight: 600;
     line-height: 1;
     position: relative;
-    left: 8px;
+    left: 10px;
     top: -4px;
   }
 
@@ -75,14 +75,12 @@
     margin: 30px auto;
   }
   
-  .weather-icon img {
+  .weather-icon canva {
     display: inline-block;
-    height: 70px;
     position: relative;
     top: 6px;
     right: 5px;
     vertical-align: top;
-    width: 70px;
   }
   
   .weather-icon strong {
@@ -93,19 +91,3 @@
     position: relative;
     top: 12px;
   }
-
-
-    /* .weather-forecast {
-    font-family: "Fredoka", sans-serif;
-    margin-top: 35px;
-    text-align: center;
-  } */
-  
-  /* .weather-temp-min {
-    color: #7f6a8a;
-  } */
-  
-  /* .weather-icon .active:hover {
-    color: rgb(201, 146, 235);
-    text-decoration: none;
-  } */

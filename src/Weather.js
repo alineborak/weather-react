@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
+import FormattedDate from "./FormattedDate";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
@@ -10,11 +11,11 @@ export default function Weather(props) {
     function handleResponse(response) {
         setWeatherData({
             ready: true,
-            time: "Tuesday 10:00",
+            date: new Date(response.data.dt * 1000),
             city: response.data.name,
             description: response.data.weather[0].description,
             temperature: response.data.main.temp,
-            iconUrl: `https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+            icon: response.data.weather[0].icon,
             feel: response.data.main.feels_like,
             humidity: response.data.main.humidity,
             wind: response.data.wind.speed
@@ -39,7 +40,9 @@ export default function Weather(props) {
     if (weatherData.ready) {
         return (
             <div className="weather-app">
-                <p id="date">{weatherData.time}</p>
+                <p id="date">
+                    <FormattedDate date={weatherData.date} />
+                </p>
                 <form onSubmit={handleSubmit} action="" id="search-form">
                     <div className="row">
                         <div className="col-9">
@@ -50,6 +53,7 @@ export default function Weather(props) {
                                 id="city-input"
                                 autoFocus="on"
                                 onChange={handleCityChange}
+                                autoComplete="off"
                             />
                         </div>
                         <div className="col-3">
