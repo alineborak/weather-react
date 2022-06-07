@@ -1,5 +1,5 @@
   #additional-info {
-  color: #2c567f;
+  color: #d5dee7;
   font-weight: 600;
   list-style: none;
   margin: 0;
@@ -33,7 +33,7 @@
   }
 
   #current-condition {
-    color: #70757A;
+    color: #d1e3f6;
     font-family: "Russo One", sans-serif;
     font-size: 14px;
   }
@@ -48,7 +48,7 @@
   }
   
   #temperature-degree {
-    color: rgb(148, 77, 111);
+    color: rgb(244, 180, 211);
     position: relative;
     left: 10px;
   }
@@ -58,7 +58,7 @@
   }
 
   .units {
-    color: rgb(148, 77, 111);
+    color: rgb(244, 180, 211);
     font-weight: 600;
     line-height: 1;
     position: relative;
