@@ -29,7 +29,7 @@
   #date {
     color: rgb(213, 143, 138);
     font-size: 14px;
-    font-weight: 500;
+    font-weight: bold;
   }
 
   #current-condition {
@@ -41,6 +41,16 @@
   #city-input {
     color: rgb(210, 125, 118);
     font-family: "Fredoka", sans-serif;
+  }
+
+  #quote {
+    color: rgb(244, 180, 211);
+    font-weight: bold;
+    font-style: italic;
+    font-size: 12px;
+    position: relative;
+    bottom: 40px;
+    left: 400px;
   }
   
   #search-form {

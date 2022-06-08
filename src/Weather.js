@@ -43,6 +43,7 @@ export default function Weather(props) {
                 <p id="date">
                     <FormattedDate date={weatherData.date} />
                 </p>
+                <span id="quote">You may check the weather here, but also: listen to your Mom - She usually gets it right.</span>
                 <form onSubmit={handleSubmit} action="" id="search-form">
                     <div className="row">
                         <div className="col-9">
