@@ -13,6 +13,10 @@ a {
 
 body {
   font-family: "Nunito", sans-serif;
+  min-height: calc(100vh - 30px);
+  background-image: url("./sky.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 .col-6 {

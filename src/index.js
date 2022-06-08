@@ -1,20 +1,12 @@
 import React from "react";
 import ReactDOM from "react-dom";
 import Weather from "./Weather";
-import bg from "./sky.jpg";
 
 import "./App.css";
 
 function App() {
   return (
-    <div
-      className="App"
-      style={{
-        backgroundImage: `url(${bg})`,
-        backgroundRepeat: "no-repeat",
-        backgroundSize: "cover",
-      }}
-    >
+    <div className="App">
       <Weather defaultCity="Amsterdam" />
       <div>
         <small>
@@ -31,7 +23,6 @@ function App() {
     </div>
   );
 }
-<img src="./sky.png" alt="sky" class="sky" />;
 
 const rootElement = document.getElementById("root");
 ReactDOM.render(<App />, rootElement);
