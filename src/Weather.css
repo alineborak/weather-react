@@ -18,12 +18,11 @@
   }
   
   #search-btn {
-    /* color: rgb(148, 77, 111); */
     font-family: "Fredoka", sans-serif;
   }
   
   #search-btn:hover {
-    /* color: rgb(184, 50, 115); */
+    color: rgb(189, 118, 112);
   }
   
   #date {
@@ -36,6 +35,7 @@
     color: #d1e3f6;
     font-family: "Russo One", sans-serif;
     font-size: 14px;
+    font-weight: 10px;
   }
   
   #city-input {
@@ -77,12 +77,10 @@
   }
 
   .weather-app {
-    border-radius: 10px;
+    border-radius: 8px;
     border-style: inset;
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(15px);
-    padding: 18px;
-    margin: 30px auto;
+    padding: 28px;
+    margin: 20px auto;
   }
   
   .weather-icon canva {
