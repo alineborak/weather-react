@@ -1,5 +1,5 @@
   #additional-info {
-  color: #d5dee7;
+  color: #486481;
   font-weight: 600;
   list-style: none;
   margin: 0;
@@ -7,8 +7,6 @@
   
   #background-img {
     position: fixed;
-    right: 0px;
-    top: 0px;
     max-width: 100%;
     min-height: 100%;
     z-index: -5;
@@ -26,31 +24,30 @@
   }
   
   #date {
-    color: rgb(213, 143, 138);
+    color: rgb(93, 31, 83);
     font-size: 14px;
     font-weight: bold;
   }
 
   #current-condition {
-    color: #d1e3f6;
+    color: #374452;
     font-family: "Russo One", sans-serif;
     font-size: 14px;
     font-weight: 10px;
   }
   
   #city-input {
-    color: rgb(210, 125, 118);
+    color: rgb(40, 5, 2);
     font-family: "Fredoka", sans-serif;
   }
 
   #quote {
-    color: rgb(244, 180, 211);
+    color: rgb(67, 1, 33);
     font-weight: bold;
-    font-style: italic;
     font-size: 12px;
     position: relative;
     bottom: 40px;
-    left: 400px;
+    left: 300px;
   }
   
   #search-form {
@@ -58,7 +55,7 @@
   }
   
   #temperature-degree {
-    color: rgb(244, 180, 211);
+    color: rgb(78, 5, 134);
     position: relative;
     left: 10px;
   }
@@ -68,7 +65,7 @@
   }
 
   .units {
-    color: rgb(244, 180, 211);
+    color: rgb(78, 5, 134);
     font-weight: 600;
     line-height: 1;
     position: relative;
@@ -77,9 +74,10 @@
   }
 
   .weather-app {
-    border-radius: 8px;
-    border-style: inset;
-    padding: 28px;
+    border-radius: 26px;
+    border-style: groove;
+    border-color: #78a8db;
+    padding: 20px;
     margin: 20px auto;
   }
   
@@ -92,7 +90,7 @@
   }
   
   .weather-icon strong {
-    color: #fff;
+    color: rgb(74, 139, 176);
     font-size: 40px;
     font-family: "Russo One", sans-serif;
     font-weight: 400;

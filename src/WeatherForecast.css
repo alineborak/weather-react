@@ -1,0 +1,13 @@
+.forecast-weekday {
+    font-size: 14px;
+}
+
+.temp-min {
+  font-weight: bold;
+}
+
+.WeatherForecast {
+    font-size: 13px;
+    text-align: center;
+}
+

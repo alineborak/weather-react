@@ -4,7 +4,7 @@
 }
 
 a {
-  color: rgb(244, 180, 211);
+  color: rgb(122, 3, 61);
 }
 
 a:hover {
@@ -14,7 +14,7 @@ a:hover {
 body {
   font-family: "Nunito", sans-serif;
   min-height: calc(100vh - 30px);
-  background-image: url("./sky.jpg");
+  background-image: url("/./media/sky.jpg");
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -24,7 +24,7 @@ body {
 }
 
 h2 {
-  color: #e1e9f1;
+  color: #034489;
   font-weight: 800;
   text-align: center;
 }

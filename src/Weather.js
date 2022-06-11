@@ -3,6 +3,7 @@ import WeatherInfo from "./WeatherInfo";
 import axios from "axios";
 import "./Weather.css";
 import FormattedDate from "./FormattedDate";
+import WeatherForecast from "./WeatherForecast";
 
 export default function Weather(props) {
     const [weatherData, setWeatherData] = useState({ ready: false });
@@ -43,7 +44,7 @@ export default function Weather(props) {
                 <p id="date">
                     <FormattedDate date={weatherData.date} />
                 </p>
-                <span id="quote">You may check the weather here, but also: listen to your Mom - She usually gets it right.</span>
+                <p id="quote">You may check the weather here, but also: <br></br> listen to your Mom - She usually gets it right.</p>
                 <form onSubmit={handleSubmit} action="" id="search-form">
                     <div className="row">
                         <div className="col-9">
@@ -68,6 +69,7 @@ export default function Weather(props) {
                     </div>
                 </form>
                 <WeatherInfo data={weatherData} />
+                <WeatherForecast />
             </div>
         );
     } else {
