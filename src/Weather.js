@@ -14,6 +14,7 @@ export default function Weather(props) {
             ready: true,
             date: new Date(response.data.dt * 1000),
             city: response.data.name,
+            coordinates: response.data.coord,
             description: response.data.weather[0].description,
             temperature: response.data.main.temp,
             icon: response.data.weather[0].icon,
@@ -41,10 +42,10 @@ export default function Weather(props) {
     if (weatherData.ready) {
         return (
             <div className="weather-app">
-                <p id="date">
+                <span id="date">
                     <FormattedDate date={weatherData.date} />
-                </p>
-                <p id="quote">You may check the weather here, but also: <br></br> listen to your Mom - She usually gets it right.</p>
+                </span>
+                <p id="quote">Check the forecast, but also listen to <br></br> your Mom - She is always right ˆˆ.</p>
                 <form onSubmit={handleSubmit} action="" id="search-form">
                     <div className="row">
                         <div className="col-9">
@@ -69,7 +70,7 @@ export default function Weather(props) {
                     </div>
                 </form>
                 <WeatherInfo data={weatherData} />
-                <WeatherForecast />
+                <WeatherForecast coordinates={weatherData.coordinates} />
             </div>
         );
     } else {
