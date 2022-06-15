@@ -25,9 +25,6 @@ export default function WeatherForecast(props) {
                         if (index < 6) {
                             return (
                                 <div className="col" key={index}>
-
-
-
                                     <WeatherForecastDay data={dailyForecast} />
                                 </div>
                             );
