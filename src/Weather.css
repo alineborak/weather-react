@@ -1,5 +1,5 @@
   #additional-info {
-  color: #486481;
+  color: #000000;
   font-weight: 600;
   list-style: none;
   margin: 0;
@@ -30,7 +30,7 @@
   }
 
   #current-condition {
-    color: #374452;
+    color: #000000;
     font-family: "Russo One", sans-serif;
     font-size: 14px;
     font-weight: 10px;
